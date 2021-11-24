@@ -1,6 +1,6 @@
 {
   "name": "react-gravity-form",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "A component for including Gravity Forms on React apps via the Wordpress API",
   "files": [
     "dist/*"
@@ -8,7 +8,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src --out-dir E:\\Projects\\hold-norge-rent\\wp-content\\themes\\holdnorgerent\\node_modules\\react-gravity-form\\dist",
+    "build": "babel ./src --out-dir ./dist",
     "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
   },
   "repository": {
