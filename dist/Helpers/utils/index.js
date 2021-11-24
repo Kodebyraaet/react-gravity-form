@@ -1,0 +1,1 @@
+"use strict";var _equalShallow=_interopRequireDefault(require("./equalShallow"));Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"equalShallow",{enumerable:!0,get:function get(){return _equalShallow["default"]}});function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}

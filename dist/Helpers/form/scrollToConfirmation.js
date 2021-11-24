@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=void 0;var _default=function(a,b){var c=a.onChangePage,d=a.jumpToConfirmation;if(c&&c(),d){var e=!!b&&b.current.getBoundingClientRect();if(e&&window){var f=window.pageYOffset||document.documentElement.scrollTop;window.scrollTo({top:f+e.top-100})}}};exports["default"]=_default;
