@@ -40,7 +40,7 @@
     "react": "^16.13.1"
   },
   "dependencies": {
-    "i18n-iso-countries": "^6.4.0",
+    "i18n-iso-countries": "^5.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "query-string": "^5.0.0",
     "react-datepicker": "^3.1.3",
