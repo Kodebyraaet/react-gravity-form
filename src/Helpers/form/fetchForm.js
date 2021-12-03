@@ -36,6 +36,7 @@ async function fetchForm({
   if (form) {
     const formValues = {};
     const conditionFields = [];
+    const productFields = [];
     const conditionalIds = [];
     const pages = [];
     // eslint-disable-next-line no-restricted-syntax
@@ -75,7 +76,7 @@ async function fetchForm({
         pageNumber: field.pageNumber,
         cssClass: field.cssClass,
         isRequired: field.isRequired,
-        type: field.type,
+        type: field.type
       };
     }
 
@@ -86,6 +87,7 @@ async function fetchForm({
         formValues
       );
     }
+
     setFormData(form);
     setFormValues(formValues);
     setActivePage(initialPage || (form.pagination ? 1 : false));

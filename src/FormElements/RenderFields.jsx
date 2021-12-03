@@ -53,7 +53,10 @@ const fieldTypes = [
   "buckarooideal",
   "postcode",
   "post_title",
-  "list"
+  "list",
+  "product",
+  "quantity",
+  "total"
 ];
 
 const honeyPotLables = ["Name", "Email", "Phone", "Comments"];
@@ -75,6 +78,7 @@ export default (props) => {
     nextStep,
     isNextDisabled,
     checkConditionalLogic,
+    calculateProduct,
     saveStateToHtmlField,
     enableHoneypot,
     styledComponents,
@@ -117,6 +121,7 @@ export default (props) => {
         nextStep={nextStep}
         isNextDisabled={isNextDisabled}
         checkConditionalLogic={checkConditionalLogic}
+        calculateProduct={calculateProduct}
         saveStateToHtmlField={saveStateToHtmlField}
         styledComponents={styledComponents}
         customComponents={customComponents}

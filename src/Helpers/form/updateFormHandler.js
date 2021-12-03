@@ -1,5 +1,6 @@
 import { validateField } from "../validation";
 import checkConditionalLogic from "./checkConditionalLogic";
+import calculateProduct from "./calculateProduct";
 
 export default (
   field,
@@ -78,6 +79,7 @@ export default (
 
   // Validate field
   const valid = validateField(value, field);
+  formValues = calculateProduct(field.productField ?? null, formValues);
 
   // if field ID is somewhere in conditional fields
   // recalculate all conditions
@@ -111,6 +113,8 @@ export default (
       isRequired: field.isRequired,
     },
   };
+
+  console.log(newValues);
 
   setFormValues({
     ...newValues,

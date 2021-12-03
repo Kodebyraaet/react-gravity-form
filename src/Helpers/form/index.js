@@ -1,4 +1,5 @@
 import checkConditionalLogic from './checkConditionalLogic';
+import calculateProduct from "./calculateProduct";
 import fetchForm from './fetchForm';
 import forceValidation from './forceValidation';
 import getFieldPrepopulatedValue from './getFieldPrepopulatedValue';
@@ -16,6 +17,7 @@ import usePrevious from './usePrevious';
 
 export {
   checkConditionalLogic,
+  calculateProduct,
   fetchForm,
   forceValidation,
   getFieldPrepopulatedValue,

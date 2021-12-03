@@ -22,6 +22,9 @@ import Address from './Address';
 import Buckarooideal from './Buckarooideal';
 import Posttitle from "./Posttitle";
 import List from "./List";
+import Product from "./Product";
+import Quantity from "./Quantity";
+import Total from "./Total";
 
 export {
   Checkbox,
@@ -47,5 +50,8 @@ export {
   Address,
   Buckarooideal,
   Posttitle,
-  List
+  List,
+  Product,
+  Quantity,
+  Total
 };

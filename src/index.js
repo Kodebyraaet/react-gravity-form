@@ -10,6 +10,7 @@ import {
 
 import {
   checkConditionalLogic,
+  calculateProduct,
   fetchForm,
   forceValidation,
   nextStep,
@@ -18,7 +19,7 @@ import {
   setTouchedHandler,
   unsetError,
   updateFieldsValuesBasedOnEntry,
-  updateFormHandler,
+  updateFormHandler
 } from "./Helpers/form";
 
 import { validateField } from "./Helpers/validation";
@@ -308,6 +309,9 @@ const GravityForm = (props) => {
               }
               checkConditionalLogic={(condition, fields) =>
                 checkConditionalLogic(condition, (fields = false))
+              }
+              calculateProduct={(productField, fields) =>
+                calculateProduct(productField, (fields = false))
               }
               saveStateToHtmlField={saveStateToHtmlField}
               enableHoneypot={formData.enableHoneypot}
