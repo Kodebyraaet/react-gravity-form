@@ -76,7 +76,9 @@ async function fetchForm({
         pageNumber: field.pageNumber,
         cssClass: field.cssClass,
         isRequired: field.isRequired,
-        type: field.type
+        type: field.type,
+        productField: field.productField,
+        basePrice: field.basePrice
       };
     }
 

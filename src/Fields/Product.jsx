@@ -7,13 +7,13 @@ export default ({
                     hideField,
                     styledComponents
                 }) => {
-    let { description, basePrice, label, cssClass, width } = field;
+    let {description, basePrice, label, cssClass, width, customName, id} = field;
 
     // only for UAF project
     // you can remove it
     // here I collect valus based on GF field class and save it to the HTML field
     if (saveStateToHtmlField) {
-        const { saveStateToHtmlField: states, formValues } = saveStateToHtmlField;
+        const {saveStateToHtmlField: states, formValues} = saveStateToHtmlField;
         const classes = Object.keys(states);
         const values = [];
         if (classes) {
@@ -38,14 +38,14 @@ export default ({
         }
     }
 
-    const { Box = "div", Label = "label" } = styledComponents || false;
+    const {Box = "div", Label = "label"} = styledComponents || false;
 
     return (
         // eslint-disable-next-line
         <Box
             width={width}
             className={`form-field ${cssClass}`}
-            style={{ display: hideField ? "none" : undefined }}
+            style={{display: hideField ? "none" : undefined}}
         >
             <Label className="gf-label">
                 {label}
@@ -55,8 +55,11 @@ export default ({
             </Label>
             <div
                 className="html-content"
-                dangerouslySetInnerHTML={{ __html: description }}
+                dangerouslySetInnerHTML={{__html: description}}
             />
+
+            <input type={'hidden'} name={customName || `input_${id}.1`} value={label}/>
+            <input type={'hidden'} name={customName || `input_${id}.2`} value={basePrice}/>
         </Box>
     );
 };

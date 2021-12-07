@@ -56,7 +56,9 @@ const fieldTypes = [
   "list",
   "product",
   "quantity",
-  "total"
+  "total",
+  "shipping",
+  "option"
 ];
 
 const honeyPotLables = ["Name", "Email", "Phone", "Comments"];

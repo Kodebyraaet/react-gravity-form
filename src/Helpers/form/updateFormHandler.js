@@ -79,7 +79,6 @@ export default (
 
   // Validate field
   const valid = validateField(value, field);
-  formValues = calculateProduct(field.productField ?? null, formValues);
 
   // if field ID is somewhere in conditional fields
   // recalculate all conditions
@@ -101,7 +100,7 @@ export default (
     }
   }
 
-  const newValues = {
+  let newValues = {
     ...formValues,
     [id]: {
       value,
@@ -111,10 +110,13 @@ export default (
       pageNumber: field.pageNumber,
       cssClass: field.cssClass,
       isRequired: field.isRequired,
+      productField: field.productField,
+      basePrice: field.basePrice,
+      type: field.type
     },
   };
 
-  console.log(newValues);
+  newValues = calculateProduct(field.productField ?? null, newValues);
 
   setFormValues({
     ...newValues,

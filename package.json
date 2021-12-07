@@ -1,6 +1,6 @@
 {
   "name": "react-gravity-form",
-  "version": "1.0.12",
+  "version": "1.0.15",
   "description": "A component for including Gravity Forms on React apps via the Wordpress API",
   "files": [
     "dist/*"
@@ -40,9 +40,9 @@
     "react": "^16.13.1"
   },
   "dependencies": {
-    "i18n-iso-countries": "^6.4.0",
+    "i18n-iso-countries": "^3.7.3",
     "isomorphic-unfetch": "^3.0.0",
-    "query-string": "^6.13.8",
+    "query-string": "^5.0.0",
     "react-datepicker": "^3.1.3",
     "react-dropzone": "^11.0.2",
     "react-select": "^3.1.0"

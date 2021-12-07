@@ -25,6 +25,8 @@ import List from "./List";
 import Product from "./Product";
 import Quantity from "./Quantity";
 import Total from "./Total";
+import Shipping from "./Shipping";
+import Option from "./Option";
 
 export {
   Checkbox,
@@ -53,5 +55,7 @@ export {
   List,
   Product,
   Quantity,
-  Total
+  Total,
+  Shipping,
+  Option
 };
