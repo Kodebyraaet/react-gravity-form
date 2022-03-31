@@ -22,7 +22,7 @@ export default ({defaultProps}) => {
 
   const { id, isRequired, formId, type, customName } = field;
 
-  const RSelect = ReactSelect || null;
+  const RSelect = ReactSelect || 'select';
 
   const getNumberDropdown = (i) => {
     const options = [];
